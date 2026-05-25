@@ -1,0 +1,32 @@
+TABLEAU DE COMPÉTENCES - BTS SIO SLAM
+
+Compétence : Travailler en mode projet
+Preuves :
+- Organisation du projet
+- Documentation
+- Suivi des tâches
+
+Compétence : Mettre à disposition un service informatique
+Preuves :
+- Déploiement local
+- Tests
+- Vérification du fonctionnement
+
+Compétence : Développer la présence en ligne de l’organisation
+Preuves :
+- Portfolio
+- Site web projet
+- Pages structurées
+
+Compétence : Organiser son développement professionnel
+Preuves :
+- Certifications
+- Veille technologique
+- Progression personnelle
+
+Compétence : Gérer les données
+Preuves :
+- MCD
+- Base relationnelle
+- Requêtes SQL
+- Contraintes clés primaires / clés étrangères

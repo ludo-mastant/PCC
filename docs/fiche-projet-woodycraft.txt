@@ -1,0 +1,38 @@
+FICHE PROJET - WOODYCRAFT WEB
+
+Nom du projet :
+WoodyCraft Web
+
+Contexte :
+Projet réalisé dans le cadre du BTS SIO option SLAM.
+
+Besoin métier :
+Présenter et gérer un catalogue de puzzles en ligne, avec une organisation claire des données.
+
+Technologies :
+- Laravel
+- PHP
+- MySQL
+- HTML / CSS
+- Architecture MVC
+
+Fonctionnalités principales :
+- Gestion des puzzles
+- Gestion des catégories
+- Affichage du catalogue
+- Structuration des données en base
+- Documentation du projet
+
+Compétences travaillées :
+- Travailler en mode projet
+- Mettre à disposition un service informatique
+- Développer la présence en ligne de l’organisation
+- Organiser son développement professionnel
+
+À compléter :
+- Captures d’écran
+- Schéma UML
+- MCD / modèle relationnel
+- Rapport de tests
+- Difficultés rencontrées
+- Améliorations possibles

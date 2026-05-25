@@ -1,0 +1,27 @@
+FICHE DE VEILLE TECHNOLOGIQUE
+
+Thème :
+Développement web, frameworks et sécurité des applications.
+
+Objectif :
+Suivre les évolutions techniques utiles pour améliorer mes projets et mes méthodes de développement.
+
+Méthode :
+- Recherche d’articles et documentations
+- Sélection des informations utiles
+- Classement par thème
+- Réutilisation dans les projets
+
+Exemples de sujets :
+- Sécurité des formulaires
+- Bonnes pratiques Laravel
+- Architecture MVC
+- API REST
+- Gestion des bases de données
+- Sauvegarde et tests
+
+À compléter :
+- Sources utilisées
+- Date de consultation
+- Résumé de chaque information
+- Intérêt pour le projet

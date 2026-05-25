@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio PCC - BTS SIO SLAM</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#accueil" class="logo">
+        <span class="logo-mark">SLAM</span>
+        <span>Portfolio PCC</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#veille">Veille</a></li>
+        <li><a href="#documents">Documents</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="accueil">
+      <div class="hero-content reveal">
+        <p class="eyebrow">BTS SIO option SLAM</p>
+        <h1>Portfolio professionnel pour l’épreuve PCC</h1>
+        <p class="hero-text">
+          Ce portfolio présente mon parcours, mes compétences de développement, mes projets réalisés
+          et les certifications préparées pendant ma formation.
+        </p>
+        <div class="hero-actions">
+          <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+          <a href="#documents" class="btn btn-secondary">Télécharger les documents</a>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="avatar">PN</div>
+        <h2>Prénom NOM</h2>
+        <p>Étudiant en BTS SIO SLAM</p>
+        <ul>
+          <li>Développement web</li>
+          <li>Base de données</li>
+          <li>Architecture MVC</li>
+          <li>Documentation projet</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="profil">
+      <div class="section-title reveal">
+        <p class="eyebrow">Présentation</p>
+        <h2>Mon profil</h2>
+      </div>
+
+      <div class="grid two-columns">
+        <article class="card reveal">
+          <h3>Qui suis-je ?</h3>
+          <p>
+            Je suis étudiant en BTS SIO option SLAM. Mon objectif est de progresser dans le
+            développement d’applications, la conception de bases de données et la mise en place
+            de solutions utiles pour un besoin métier.
+          </p>
+          <p>
+            À travers ce portfolio, je présente les situations professionnelles travaillées,
+            les compétences acquises, ainsi que les éléments utiles pour l’épreuve orale.
+          </p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Objectif du portfolio</h3>
+          <p>
+            Ce site sert de support clair pour présenter mon parcours, expliquer mes choix
+            techniques et accéder rapidement aux preuves : captures, documents, certifications,
+            fiches projet et éléments de veille.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projets">
+      <div class="section-title reveal">
+        <p class="eyebrow">Situations professionnelles</p>
+        <h2>Mes projets</h2>
+      </div>
+
+      <div class="filters reveal" aria-label="Filtres projets">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="bdd">Base de données</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal" data-category="web bdd">
+          <div class="project-top">
+            <span class="tag">Laravel</span>
+            <span class="tag">MVC</span>
+            <span class="tag">MySQL</span>
+          </div>
+          <h3>WoodyCraft Web</h3>
+          <p>
+            Application web de gestion et de présentation de puzzles. Le projet permet de
+            structurer un catalogue, d’organiser les données et de répondre à un besoin métier.
+          </p>
+          <ul class="check-list">
+            <li>Modèle MVC</li>
+            <li>Gestion des catégories et puzzles</li>
+            <li>Base de données relationnelle</li>
+            <li>Documentation et tests</li>
+          </ul>
+          <a href="docs/fiche-projet-woodycraft.txt" download class="text-link">Télécharger la fiche projet</a>
+        </article>
+
+        <article class="project-card reveal" data-category="mobile bdd">
+          <div class="project-top">
+            <span class="tag">Flutter</span>
+            <span class="tag">API REST</span>
+            <span class="tag">Admin</span>
+          </div>
+          <h3>WoodyCraft Admin</h3>
+          <p>
+            Application mobile d’administration permettant de gérer des éléments du projet :
+            commandes, catalogue, stock et données liées à l’activité.
+          </p>
+          <ul class="check-list">
+            <li>Interface mobile</li>
+            <li>Connexion à une API</li>
+            <li>Gestion côté administrateur</li>
+            <li>Suivi des fonctionnalités</li>
+          </ul>
+          <a href="docs/fiche-projet-woodycraft-admin.txt" download class="text-link">Télécharger la fiche projet</a>
+        </article>
+
+        <article class="project-card reveal" data-category="bdd">
+          <div class="project-top">
+            <span class="tag">SQL</span>
+            <span class="tag">MCD</span>
+            <span class="tag">Tests</span>
+          </div>
+          <h3>Base de données</h3>
+          <p>
+            Travail sur la modélisation, les tables, les clés primaires et étrangères,
+            les relations, les requêtes SQL et la cohérence des données.
+          </p>
+          <ul class="check-list">
+            <li>MCD et modèle relationnel</li>
+            <li>Requêtes SQL</li>
+            <li>Contraintes d’intégrité</li>
+            <li>Plan de sauvegarde</li>
+          </ul>
+          <a href="docs/tableau-competences.txt" download class="text-link">Télécharger les compétences</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="competences">
+      <div class="section-title reveal">
+        <p class="eyebrow">Compétences</p>
+        <h2>Compétences travaillées</h2>
+      </div>
+
+      <div class="skills-layout">
+        <div class="card reveal">
+          <h3>Développement</h3>
+          <div class="skill">
+            <span>HTML / CSS</span>
+            <div class="bar"><span style="width: 80%"></span></div>
+          </div>
+          <div class="skill">
+            <span>JavaScript</span>
+            <div class="bar"><span style="width: 60%"></span></div>
+          </div>
+          <div class="skill">
+            <span>PHP / Laravel</span>
+            <div class="bar"><span style="width: 70%"></span></div>
+          </div>
+          <div class="skill">
+            <span>SQL / MySQL</span>
+            <div class="bar"><span style="width: 75%"></span></div>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <h3>Bloc de compétences BTS SIO</h3>
+          <ul class="check-list">
+            <li>Répondre aux incidents et aux demandes d’assistance</li>
+            <li>Développer la présence en ligne de l’organisation</li>
+            <li>Travailler en mode projet</li>
+            <li>Mettre à disposition un service informatique</li>
+            <li>Organiser son développement professionnel</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
+      <div class="section-title reveal">
+        <p class="eyebrow">Preuves</p>
+        <h2>Certifications et attestations</h2>
+      </div>
+
+      <p class="section-help reveal">
+        Remplace les images SVG par tes captures ou attestations. Les boutons de téléchargement
+        peuvent pointer vers un PDF, une image PNG/JPG ou un fichier texte.
+      </p>
+
+      <div class="certif-grid">
+        <article class="certif-card reveal">
+          <img src="assets/certifications/certification-pix-placeholder.svg" alt="Aperçu certification PIX" />
+          <h3>Certification PIX</h3>
+          <p>Compétences numériques et environnement informatique.</p>
+          <a href="assets/certifications/certification-pix-placeholder.svg" download class="btn btn-small">Télécharger</a>
+        </article>
+
+        <article class="certif-card reveal">
+          <img src="assets/certifications/certification-anssi-placeholder.svg" alt="Aperçu certification ANSSI" />
+          <h3>Certification ANSSI</h3>
+          <p>Sensibilisation à la cybersécurité et bonnes pratiques.</p>
+          <a href="assets/certifications/certification-anssi-placeholder.svg" download class="btn btn-small">Télécharger</a>
+        </article>
+
+        <article class="certif-card reveal">
+          <img src="assets/certifications/certification-autre-placeholder.svg" alt="Aperçu autre certification" />
+          <h3>Autre certification</h3>
+          <p>Ajoute ici une certification ou une attestation complémentaire.</p>
+          <a href="assets/certifications/certification-autre-placeholder.svg" download class="btn btn-small">Télécharger</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="veille">
+      <div class="section-title reveal">
+        <p class="eyebrow">Développement professionnel</p>
+        <h2>Veille technologique</h2>
+      </div>
+
+      <div class="card reveal">
+        <h3>Thème de veille : développement web et sécurité</h3>
+        <p>
+          La veille technologique permet de suivre les évolutions des langages, frameworks,
+          outils de développement, bases de données et pratiques de cybersécurité.
+        </p>
+        <div class="timeline">
+          <div>
+            <span>1</span>
+            <p>Recherche d’informations sur des sources fiables.</p>
+          </div>
+          <div>
+            <span>2</span>
+            <p>Sélection des informations utiles pour mes projets.</p>
+          </div>
+          <div>
+            <span>3</span>
+            <p>Application dans les situations professionnelles.</p>
+          </div>
+        </div>
+        <a href="docs/veille-technologique.txt" download class="text-link">Télécharger la fiche de veille</a>
+      </div>
+    </section>
+
+    <section class="section" id="documents">
+      <div class="section-title reveal">
+        <p class="eyebrow">Téléchargements</p>
+        <h2>Documents utiles pour l’oral</h2>
+      </div>
+
+      <div class="document-list reveal">
+        <a href="docs/fiche-projet-woodycraft.txt" download>
+          <strong>Fiche projet WoodyCraft Web</strong>
+          <span>Besoin métier, architecture, fonctionnalités, tests</span>
+        </a>
+        <a href="docs/fiche-projet-woodycraft-admin.txt" download>
+          <strong>Fiche projet WoodyCraft Admin</strong>
+          <span>Application mobile, API, gestion administrateur</span>
+        </a>
+        <a href="docs/tableau-competences.txt" download>
+          <strong>Tableau de compétences</strong>
+          <span>Compétences travaillées et preuves associées</span>
+        </a>
+        <a href="docs/veille-technologique.txt" download>
+          <strong>Fiche de veille</strong>
+          <span>Thème, sources, synthèse, intérêt pour le projet</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-title reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Me contacter</h2>
+      </div>
+
+      <div class="contact-card reveal">
+        <p>Email : <button id="copyEmail" data-email="prenom.nom@email.fr">prenom.nom@email.fr</button></p>
+        <p id="copyMessage" class="copy-message" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</button>
+
+  <footer class="footer">
+    <p>Portfolio PCC - BTS SIO option SLAM - À personnaliser</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

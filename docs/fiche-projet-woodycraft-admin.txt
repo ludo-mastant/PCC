@@ -1,0 +1,35 @@
+FICHE PROJET - WOODYCRAFT ADMIN
+
+Nom du projet :
+WoodyCraft Admin
+
+Contexte :
+Application mobile d’administration liée au projet WoodyCraft.
+
+Besoin métier :
+Permettre l’administration de données liées au catalogue, aux commandes et aux stocks.
+
+Technologies :
+- Flutter
+- API REST
+- Base de données MySQL
+- Interface mobile
+
+Fonctionnalités principales :
+- Gestion administrateur
+- Consultation et suivi des données
+- Connexion à une API
+- Suivi des éléments du catalogue et du stock
+
+Compétences travaillées :
+- Concevoir et développer une solution applicative
+- Travailler en mode projet
+- Mettre à disposition un service informatique
+- Documenter une solution
+
+À compléter :
+- Captures de l’application
+- Endpoints API utilisés
+- Tests effectués
+- Problèmes rencontrés
+- Pistes d’amélioration
