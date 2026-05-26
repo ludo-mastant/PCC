@@ -6,6 +6,7 @@ const filterButtons = document.querySelectorAll(".filter-btn");
 const projectCards = document.querySelectorAll(".project-card");
 const copyEmail = document.querySelector("#copyEmail");
 const copyMessage = document.querySelector("#copyMessage");
+const revealElements = document.querySelectorAll(".reveal");
 
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("open");
@@ -17,17 +18,14 @@ navLinks.querySelectorAll("a").forEach((link) => {
   });
 });
 
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme === "dark") {
-  document.body.classList.add("dark");
-  themeToggle.textContent = "☀️";
-}
-
 themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark");
-  const isDark = document.body.classList.contains("dark");
-  localStorage.setItem("theme", isDark ? "dark" : "light");
-  themeToggle.textContent = isDark ? "☀️" : "🌙";
+
+  if (document.body.classList.contains("dark")) {
+    themeToggle.textContent = "☀️";
+  } else {
+    themeToggle.textContent = "🌙";
+  }
 });
 
 filterButtons.forEach((button) => {
@@ -39,37 +37,46 @@ filterButtons.forEach((button) => {
 
     projectCards.forEach((card) => {
       const categories = card.dataset.category;
-      const shouldShow = filter === "all" || categories.includes(filter);
-      card.classList.toggle("hide", !shouldShow);
+
+      if (filter === "all" || categories.includes(filter)) {
+        card.classList.remove("hide");
+      } else {
+        card.classList.add("hide");
+      }
     });
   });
 });
 
-const revealElements = document.querySelectorAll(".reveal");
-
-const revealOnScroll = () => {
+function revealOnScroll() {
   revealElements.forEach((element) => {
-    const rect = element.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 80) {
+    const elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < window.innerHeight - 80) {
       element.classList.add("visible");
     }
   });
-};
+}
 
 window.addEventListener("scroll", () => {
   revealOnScroll();
-  backToTop.classList.toggle("show", window.scrollY > 500);
+
+  if (window.scrollY > 500) {
+    backToTop.classList.add("show");
+  } else {
+    backToTop.classList.remove("show");
+  }
 });
 
 backToTop.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 });
 
 copyEmail.addEventListener("click", async () => {
-  const email = copyEmail.dataset.email;
-
   try {
-    await navigator.clipboard.writeText(email);
+    await navigator.clipboard.writeText(copyEmail.dataset.email);
     copyMessage.textContent = "Email copié.";
   } catch (error) {
     copyMessage.textContent = "Copie impossible sur ce navigateur.";

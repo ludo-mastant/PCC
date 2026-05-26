@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Portfolio PCC - BTS SIO SLAM</title>
+
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
+
 <body>
   <header class="site-header">
     <nav class="navbar">
@@ -14,7 +18,7 @@
         <span>Portfolio PCC</span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+      <button class="menu-toggle" id="menuToggle">☰</button>
 
       <ul class="nav-links" id="navLinks">
         <li><a href="#accueil">Accueil</a></li>
@@ -22,11 +26,10 @@
         <li><a href="#projets">Projets</a></li>
         <li><a href="#competences">Compétences</a></li>
         <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#veille">Veille</a></li>
-        <li><a href="#documents">Documents</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">🌙</button>
+      <button class="theme-toggle" id="themeToggle">🌙</button>
     </nav>
   </header>
 
@@ -34,21 +37,27 @@
     <section class="hero section" id="accueil">
       <div class="hero-content reveal">
         <p class="eyebrow">BTS SIO option SLAM</p>
-        <h1>Portfolio professionnel pour l’épreuve PCC</h1>
+
+        <h1>Portfolio professionnel pour l’épreuve EF3</h1>
+
         <p class="hero-text">
-          Ce portfolio présente mon parcours, mes compétences de développement, mes projets réalisés
-          et les certifications préparées pendant ma formation.
+          Ce portfolio présente mon parcours, mes compétences de développement,
+          mes projets réalisés et les certifications préparées pendant ma formation.
         </p>
+
         <div class="hero-actions">
           <a href="#projets" class="btn btn-primary">Voir mes projets</a>
-          <a href="#documents" class="btn btn-secondary">Télécharger les documents</a>
+          <a href="#certifications" class="btn btn-secondary">Voir mes certifications</a>
         </div>
       </div>
 
       <div class="hero-card reveal">
-        <div class="avatar">PN</div>
-        <h2>Prénom NOM</h2>
+        <div class="avatar">LM</div>
+
+        <h2>Ludo Mastantuono</h2>
+
         <p>Étudiant en BTS SIO SLAM</p>
+
         <ul>
           <li>Développement web</li>
           <li>Base de données</li>
@@ -67,11 +76,13 @@
       <div class="grid two-columns">
         <article class="card reveal">
           <h3>Qui suis-je ?</h3>
+
           <p>
-            Je suis étudiant en BTS SIO option SLAM. Mon objectif est de progresser dans le
-            développement d’applications, la conception de bases de données et la mise en place
-            de solutions utiles pour un besoin métier.
+            Je suis étudiant en BTS SIO option SLAM. Mon objectif est de progresser
+            dans le développement d’applications, la conception de bases de données
+            et la mise en place de solutions utiles pour un besoin métier.
           </p>
+
           <p>
             À travers ce portfolio, je présente les situations professionnelles travaillées,
             les compétences acquises, ainsi que les éléments utiles pour l’épreuve orale.
@@ -80,10 +91,11 @@
 
         <article class="card reveal">
           <h3>Objectif du portfolio</h3>
+
           <p>
             Ce site sert de support clair pour présenter mon parcours, expliquer mes choix
-            techniques et accéder rapidement aux preuves : captures, documents, certifications,
-            fiches projet et éléments de veille.
+            techniques et regrouper mes preuves : captures, certifications, fiches projet
+            et compétences travaillées.
           </p>
         </article>
       </div>
@@ -95,7 +107,7 @@
         <h2>Mes projets</h2>
       </div>
 
-      <div class="filters reveal" aria-label="Filtres projets">
+      <div class="filters reveal">
         <button class="filter-btn active" data-filter="all">Tous</button>
         <button class="filter-btn" data-filter="web">Web</button>
         <button class="filter-btn" data-filter="mobile">Mobile</button>
@@ -109,18 +121,24 @@
             <span class="tag">MVC</span>
             <span class="tag">MySQL</span>
           </div>
+
           <h3>WoodyCraft Web</h3>
+
           <p>
-            Application web de gestion et de présentation de puzzles. Le projet permet de
-            structurer un catalogue, d’organiser les données et de répondre à un besoin métier.
+            Application web de gestion et de présentation de puzzles. Le projet permet
+            de structurer un catalogue, d’organiser les données et de répondre à un besoin métier.
           </p>
+
           <ul class="check-list">
             <li>Modèle MVC</li>
             <li>Gestion des catégories et puzzles</li>
             <li>Base de données relationnelle</li>
             <li>Documentation et tests</li>
           </ul>
-          <a href="docs/fiche-projet-woodycraft.txt" download class="text-link">Télécharger la fiche projet</a>
+
+          <a href="docs/fiche-projet-woodycraft.txt" download class="text-link">
+            Télécharger la fiche projet
+          </a>
         </article>
 
         <article class="project-card reveal" data-category="mobile bdd">
@@ -129,18 +147,24 @@
             <span class="tag">API REST</span>
             <span class="tag">Admin</span>
           </div>
+
           <h3>WoodyCraft Admin</h3>
+
           <p>
             Application mobile d’administration permettant de gérer des éléments du projet :
             commandes, catalogue, stock et données liées à l’activité.
           </p>
+
           <ul class="check-list">
             <li>Interface mobile</li>
             <li>Connexion à une API</li>
             <li>Gestion côté administrateur</li>
             <li>Suivi des fonctionnalités</li>
           </ul>
-          <a href="docs/fiche-projet-woodycraft-admin.txt" download class="text-link">Télécharger la fiche projet</a>
+
+          <a href="docs/fiche-projet-woodycraft-admin.txt" download class="text-link">
+            Télécharger la fiche projet
+          </a>
         </article>
 
         <article class="project-card reveal" data-category="bdd">
@@ -149,18 +173,24 @@
             <span class="tag">MCD</span>
             <span class="tag">Tests</span>
           </div>
+
           <h3>Base de données</h3>
+
           <p>
             Travail sur la modélisation, les tables, les clés primaires et étrangères,
             les relations, les requêtes SQL et la cohérence des données.
           </p>
+
           <ul class="check-list">
             <li>MCD et modèle relationnel</li>
             <li>Requêtes SQL</li>
             <li>Contraintes d’intégrité</li>
             <li>Plan de sauvegarde</li>
           </ul>
-          <a href="docs/tableau-competences.txt" download class="text-link">Télécharger les compétences</a>
+
+          <a href="docs/tableau-competences.txt" download class="text-link">
+            Télécharger les compétences
+          </a>
         </article>
       </div>
     </section>
@@ -174,18 +204,22 @@
       <div class="skills-layout">
         <div class="card reveal">
           <h3>Développement</h3>
+
           <div class="skill">
             <span>HTML / CSS</span>
             <div class="bar"><span style="width: 80%"></span></div>
           </div>
+
           <div class="skill">
             <span>JavaScript</span>
             <div class="bar"><span style="width: 60%"></span></div>
           </div>
+
           <div class="skill">
             <span>PHP / Laravel</span>
             <div class="bar"><span style="width: 70%"></span></div>
           </div>
+
           <div class="skill">
             <span>SQL / MySQL</span>
             <div class="bar"><span style="width: 75%"></span></div>
@@ -194,6 +228,7 @@
 
         <div class="card reveal">
           <h3>Bloc de compétences BTS SIO</h3>
+
           <ul class="check-list">
             <li>Répondre aux incidents et aux demandes d’assistance</li>
             <li>Développer la présence en ligne de l’organisation</li>
@@ -212,87 +247,78 @@
       </div>
 
       <p class="section-help reveal">
-        Remplace les images SVG par tes captures ou attestations. Les boutons de téléchargement
-        peuvent pointer vers un PDF, une image PNG/JPG ou un fichier texte.
+        Cette section regroupe les certifications obtenues pendant mon parcours.
+        Chaque certification est affichée avec un aperçu visuel et un lien de téléchargement vers le document officiel.
       </p>
 
       <div class="certif-grid">
         <article class="certif-card reveal">
-          <img src="assets/certifications/certification-pix-placeholder.svg" alt="Aperçu certification PIX" />
-          <h3>Certification PIX</h3>
-          <p>Compétences numériques et environnement informatique.</p>
-          <a href="assets/certifications/certification-pix-placeholder.svg" download class="btn btn-small">Télécharger</a>
+          <div class="certif-preview">
+            <img src="assets/certifications/pix-1.png" alt="Aperçu certification PIX 1">
+          </div>
+
+          <h3>Certification PIX 1</h3>
+
+          <p>
+            Certification liée aux compétences numériques : environnement informatique,
+            communication, sécurité et traitement de l’information.
+          </p>
+
+          <a href="assets/certifications/pix-1.pdf" download class="btn btn-small">
+            Télécharger le PDF
+          </a>
         </article>
 
         <article class="certif-card reveal">
-          <img src="assets/certifications/certification-anssi-placeholder.svg" alt="Aperçu certification ANSSI" />
-          <h3>Certification ANSSI</h3>
-          <p>Sensibilisation à la cybersécurité et bonnes pratiques.</p>
-          <a href="assets/certifications/certification-anssi-placeholder.svg" download class="btn btn-small">Télécharger</a>
+          <div class="certif-preview">
+            <img src="assets/certifications/pix-2.png" alt="Aperçu certification PIX 2">
+          </div>
+
+          <h3>Certification PIX 2</h3>
+
+          <p>
+            Deuxième attestation PIX permettant de compléter la preuve des compétences
+            numériques travaillées pendant la formation.
+          </p>
+
+          <a href="assets/certifications/pix-2.pdf" download class="btn btn-small">
+            Télécharger le PDF
+          </a>
         </article>
 
         <article class="certif-card reveal">
-          <img src="assets/certifications/certification-autre-placeholder.svg" alt="Aperçu autre certification" />
-          <h3>Autre certification</h3>
-          <p>Ajoute ici une certification ou une attestation complémentaire.</p>
-          <a href="assets/certifications/certification-autre-placeholder.svg" download class="btn btn-small">Télécharger</a>
+          <div class="certif-preview">
+            <img src="assets/certifications/hackerrank-sql-basic.png" alt="Aperçu certification HackerRank SQL Basic">
+          </div>
+
+          <h3>HackerRank SQL Basic</h3>
+
+          <p>
+            Certification orientée SQL : requêtes, sélection de données, filtrage,
+            jointures simples et manipulation de bases de données relationnelles.
+          </p>
+
+          <a href="assets/certifications/hackerrank-sql-basic.pdf" download class="btn btn-small">
+            Télécharger le PDF
+          </a>
         </article>
-      </div>
-    </section>
 
-    <section class="section" id="veille">
-      <div class="section-title reveal">
-        <p class="eyebrow">Développement professionnel</p>
-        <h2>Veille technologique</h2>
-      </div>
-
-      <div class="card reveal">
-        <h3>Thème de veille : développement web et sécurité</h3>
-        <p>
-          La veille technologique permet de suivre les évolutions des langages, frameworks,
-          outils de développement, bases de données et pratiques de cybersécurité.
-        </p>
-        <div class="timeline">
-          <div>
-            <span>1</span>
-            <p>Recherche d’informations sur des sources fiables.</p>
+        <article class="certif-card reveal">
+          <div class="certif-preview">
+            <img src="assets/certifications/passtonhack.png" alt="Aperçu certification PassTonHack">
           </div>
-          <div>
-            <span>2</span>
-            <p>Sélection des informations utiles pour mes projets.</p>
-          </div>
-          <div>
-            <span>3</span>
-            <p>Application dans les situations professionnelles.</p>
-          </div>
-        </div>
-        <a href="docs/veille-technologique.txt" download class="text-link">Télécharger la fiche de veille</a>
-      </div>
-    </section>
 
-    <section class="section" id="documents">
-      <div class="section-title reveal">
-        <p class="eyebrow">Téléchargements</p>
-        <h2>Documents utiles pour l’oral</h2>
-      </div>
+          <h3>PassTonHack</h3>
 
-      <div class="document-list reveal">
-        <a href="docs/fiche-projet-woodycraft.txt" download>
-          <strong>Fiche projet WoodyCraft Web</strong>
-          <span>Besoin métier, architecture, fonctionnalités, tests</span>
-        </a>
-        <a href="docs/fiche-projet-woodycraft-admin.txt" download>
-          <strong>Fiche projet WoodyCraft Admin</strong>
-          <span>Application mobile, API, gestion administrateur</span>
-        </a>
-        <a href="docs/tableau-competences.txt" download>
-          <strong>Tableau de compétences</strong>
-          <span>Compétences travaillées et preuves associées</span>
-        </a>
-        <a href="docs/veille-technologique.txt" download>
-          <strong>Fiche de veille</strong>
-          <span>Thème, sources, synthèse, intérêt pour le projet</span>
-        </a>
+          <p>
+            Certification liée à la sensibilisation à la cybersécurité, aux bonnes pratiques
+            numériques et à la protection des systèmes d’information.
+          </p>
+
+          <a href="assets/certifications/passtonhack.pdf" download class="btn btn-small">
+            Télécharger le PDF
+          </a>
+        </article>
       </div>
     </section>
 
@@ -303,18 +329,22 @@
       </div>
 
       <div class="contact-card reveal">
-        <p>Email : <button id="copyEmail" data-email="prenom.nom@email.fr">prenom.nom@email.fr</button></p>
+        <p>
+          Email :
+          <button id="copyEmail" data-email="prenom.nom@email.fr">
+            ludo-mastantuono@outlook.fr
+          </button>
+        </p>
+
         <p id="copyMessage" class="copy-message" aria-live="polite"></p>
       </div>
     </section>
   </main>
 
-  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</button>
+  <button class="back-to-top" id="backToTop">↑</button>
 
   <footer class="footer">
-    <p>Portfolio PCC - BTS SIO option SLAM - À personnaliser</p>
+    <p>Portfolio PCC - BTS SIO option SLAM - Ludo Mastantuono</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
