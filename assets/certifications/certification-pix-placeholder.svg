@@ -1,9 +1,0 @@
-<svg width="1200" height="820" viewBox="0 0 1200 820" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="820" rx="40" fill="#F3F6FF"/>
-  <rect x="70" y="70" width="1060" height="680" rx="32" fill="white" stroke="#DDE3F0" stroke-width="4"/>
-  <circle cx="600" cy="265" r="88" fill="#3157ff" opacity="0.16"/>
-  <path d="M555 267L586 298L650 228" stroke="#3157ff" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="600" y="420" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800" fill="#18202F">Certification PIX</text>
-  <text x="600" y="485" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#647084">Compétences numériques</text>
-  <text x="600" y="615" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#94A1B8">Remplace cette image par ta vraie certification</text>
-</svg>
