@@ -8,25 +8,29 @@ const copyEmail = document.querySelector("#copyEmail");
 const copyMessage = document.querySelector("#copyMessage");
 const revealElements = document.querySelectorAll(".reveal");
 
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("open");
-});
-
-navLinks.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("open");
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
   });
-});
 
-themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+    });
+  });
+}
 
-  if (document.body.classList.contains("dark")) {
-    themeToggle.textContent = "☀️";
-  } else {
-    themeToggle.textContent = "🌙";
-  }
-});
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+      themeToggle.textContent = "☀️";
+    } else {
+      themeToggle.textContent = "🌙";
+    }
+  });
+}
 
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -60,31 +64,37 @@ function revealOnScroll() {
 window.addEventListener("scroll", () => {
   revealOnScroll();
 
-  if (window.scrollY > 500) {
-    backToTop.classList.add("show");
-  } else {
-    backToTop.classList.remove("show");
+  if (backToTop) {
+    if (window.scrollY > 500) {
+      backToTop.classList.add("show");
+    } else {
+      backToTop.classList.remove("show");
+    }
   }
 });
 
-backToTop.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
+if (backToTop) {
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   });
-});
+}
 
-copyEmail.addEventListener("click", async () => {
-  try {
-    await navigator.clipboard.writeText(copyEmail.dataset.email);
-    copyMessage.textContent = "Email copié.";
-  } catch (error) {
-    copyMessage.textContent = "Copie impossible sur ce navigateur.";
-  }
+if (copyEmail && copyMessage) {
+  copyEmail.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(copyEmail.dataset.email);
+      copyMessage.textContent = "Email copié.";
+    } catch (error) {
+      copyMessage.textContent = "Copie impossible sur ce navigateur.";
+    }
 
-  setTimeout(() => {
-    copyMessage.textContent = "";
-  }, 2200);
-});
+    setTimeout(() => {
+      copyMessage.textContent = "";
+    }, 2200);
+  });
+}
 
 revealOnScroll();

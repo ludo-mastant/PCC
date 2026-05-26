@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Portfolio PCC - BTS SIO SLAM</title>
+  <title>Portfolio PCC - BTS SIO SLAM - Ludo Mastantuono</title>
 
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
@@ -18,18 +18,23 @@
         <span>Portfolio PCC</span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle">☰</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+        ☰
+      </button>
 
       <ul class="nav-links" id="navLinks">
         <li><a href="#accueil">Accueil</a></li>
         <li><a href="#profil">Profil</a></li>
+        <li><a href="#bts">BTS SIO</a></li>
         <li><a href="#projets">Projets</a></li>
         <li><a href="#competences">Compétences</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <button class="theme-toggle" id="themeToggle">🌙</button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Changer le thème">
+        🌙
+      </button>
     </nav>
   </header>
 
@@ -38,11 +43,11 @@
       <div class="hero-content reveal">
         <p class="eyebrow">BTS SIO option SLAM</p>
 
-        <h1>Portfolio professionnel pour l’épreuve EF3</h1>
+        <h1>Portfolio professionnel pour l’épreuve PCC</h1>
 
         <p class="hero-text">
-          Ce portfolio présente mon parcours, mes compétences de développement,
-          mes projets réalisés et les certifications préparées pendant ma formation.
+          Je présente dans ce portfolio mon parcours, mes projets réalisés pendant ma formation,
+          mes compétences techniques et les certifications obtenues.
         </p>
 
         <div class="hero-actions">
@@ -51,20 +56,21 @@
         </div>
       </div>
 
-      <div class="hero-card reveal">
+      <aside class="hero-card reveal">
         <div class="avatar">LM</div>
 
         <h2>Ludo Mastantuono</h2>
 
-        <p>Étudiant en BTS SIO SLAM</p>
+        <p>Étudiant en BTS SIO option SLAM</p>
 
         <ul>
           <li>Développement web</li>
           <li>Base de données</li>
           <li>Architecture MVC</li>
           <li>Documentation projet</li>
+          <li>Cybersécurité et bonnes pratiques</li>
         </ul>
-      </div>
+      </aside>
     </section>
 
     <section class="section" id="profil">
@@ -73,30 +79,49 @@
         <h2>Mon profil</h2>
       </div>
 
+      <article class="card reveal profile-card-wide">
+        <h3>Qui suis-je ?</h3>
+
+        <p>
+          Je m’appelle Ludo Mastantuono et je suis étudiant en BTS SIO option SLAM.
+          Cette spécialité est orientée vers le développement d’applications, la programmation,
+          la conception de bases de données et la mise en place de solutions numériques.
+        </p>
+
+        <p>
+          À travers ce portfolio, je présente les projets que j’ai réalisés, les compétences
+          que j’ai développées et les certifications qui complètent mon parcours professionnel.
+        </p>
+      </article>
+    </section>
+
+    <section class="section" id="bts">
+      <div class="section-title reveal">
+        <p class="eyebrow">Formation</p>
+        <h2>Le BTS SIO option SLAM</h2>
+      </div>
+
       <div class="grid two-columns">
         <article class="card reveal">
-          <h3>Qui suis-je ?</h3>
+          <h3>Qu’est-ce que l’option SLAM ?</h3>
 
           <p>
-            Je suis étudiant en BTS SIO option SLAM. Mon objectif est de progresser
-            dans le développement d’applications, la conception de bases de données
-            et la mise en place de solutions utiles pour un besoin métier.
-          </p>
-
-          <p>
-            À travers ce portfolio, je présente les situations professionnelles travaillées,
-            les compétences acquises, ainsi que les éléments utiles pour l’épreuve orale.
+            L’option SLAM signifie Solutions Logicielles et Applications Métiers.
+            Elle forme principalement au développement d’applications, à la gestion
+            de bases de données, à la programmation web et à l’analyse des besoins.
           </p>
         </article>
 
         <article class="card reveal">
-          <h3>Objectif du portfolio</h3>
+          <h3>Ce que je travaille dans cette option</h3>
 
-          <p>
-            Ce site sert de support clair pour présenter mon parcours, expliquer mes choix
-            techniques et regrouper mes preuves : captures, certifications, fiches projet
-            et compétences travaillées.
-          </p>
+          <ul class="check-list">
+            <li>Concevoir et développer une solution applicative</li>
+            <li>Créer et exploiter une base de données</li>
+            <li>Utiliser des langages comme HTML, CSS, JavaScript, PHP et SQL</li>
+            <li>Comprendre l’architecture MVC avec Laravel</li>
+            <li>Documenter, tester et présenter un projet informatique</li>
+          </ul>
         </article>
       </div>
     </section>
@@ -112,6 +137,7 @@
         <button class="filter-btn" data-filter="web">Web</button>
         <button class="filter-btn" data-filter="mobile">Mobile</button>
         <button class="filter-btn" data-filter="bdd">Base de données</button>
+        <button class="filter-btn" data-filter="game">Unity</button>
       </div>
 
       <div class="project-grid">
@@ -125,20 +151,16 @@
           <h3>WoodyCraft Web</h3>
 
           <p>
-            Application web de gestion et de présentation de puzzles. Le projet permet
+            Application web de gestion et de présentation de puzzles. Ce projet permet
             de structurer un catalogue, d’organiser les données et de répondre à un besoin métier.
           </p>
 
           <ul class="check-list">
-            <li>Modèle MVC</li>
-            <li>Gestion des catégories et puzzles</li>
+            <li>Architecture MVC</li>
+            <li>Gestion des puzzles et des fournisseurs</li>
             <li>Base de données relationnelle</li>
-            <li>Documentation et tests</li>
+            <li>Routes, contrôleurs, vues et modèles Laravel</li>
           </ul>
-
-          <a href="docs/fiche-projet-woodycraft.txt" download class="text-link">
-            Télécharger la fiche projet
-          </a>
         </article>
 
         <article class="project-card reveal" data-category="mobile bdd">
@@ -151,20 +173,16 @@
           <h3>WoodyCraft Admin</h3>
 
           <p>
-            Application mobile d’administration permettant de gérer des éléments du projet :
-            commandes, catalogue, stock et données liées à l’activité.
+            Application mobile d’administration permettant de gérer certains éléments du projet :
+            catalogue, stock, commandes et données liées à l’activité.
           </p>
 
           <ul class="check-list">
             <li>Interface mobile</li>
             <li>Connexion à une API</li>
             <li>Gestion côté administrateur</li>
-            <li>Suivi des fonctionnalités</li>
+            <li>Organisation des fonctionnalités</li>
           </ul>
-
-          <a href="docs/fiche-projet-woodycraft-admin.txt" download class="text-link">
-            Télécharger la fiche projet
-          </a>
         </article>
 
         <article class="project-card reveal" data-category="bdd">
@@ -177,20 +195,38 @@
           <h3>Base de données</h3>
 
           <p>
-            Travail sur la modélisation, les tables, les clés primaires et étrangères,
-            les relations, les requêtes SQL et la cohérence des données.
+            Travail sur la modélisation des données, les tables, les clés primaires,
+            les clés étrangères, les relations et les requêtes SQL.
           </p>
 
           <ul class="check-list">
-            <li>MCD et modèle relationnel</li>
+            <li>Modèle conceptuel de données</li>
             <li>Requêtes SQL</li>
             <li>Contraintes d’intégrité</li>
-            <li>Plan de sauvegarde</li>
+            <li>Sauvegarde et cohérence des données</li>
           </ul>
+        </article>
 
-          <a href="docs/tableau-competences.txt" download class="text-link">
-            Télécharger les compétences
-          </a>
+        <article class="project-card reveal" data-category="game">
+          <div class="project-top">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Jeu vidéo</span>
+          </div>
+
+          <h3>Projet Unity Junior</h3>
+
+          <p>
+            Petit projet réalisé avec Unity afin de découvrir les bases du développement
+            de jeu vidéo, la logique de scripts en C# et l’organisation d’une scène interactive.
+          </p>
+
+          <ul class="check-list">
+            <li>Création d’une scène Unity</li>
+            <li>Utilisation de scripts C# simples</li>
+            <li>Gestion d’objets et d’interactions</li>
+            <li>Découverte de la logique événementielle</li>
+          </ul>
         </article>
       </div>
     </section>
@@ -203,7 +239,7 @@
 
       <div class="skills-layout">
         <div class="card reveal">
-          <h3>Développement</h3>
+          <h3>Compétences techniques</h3>
 
           <div class="skill">
             <span>HTML / CSS</span>
@@ -224,16 +260,22 @@
             <span>SQL / MySQL</span>
             <div class="bar"><span style="width: 75%"></span></div>
           </div>
+
+          <div class="skill">
+            <span>Unity / C#</span>
+            <div class="bar"><span style="width: 45%"></span></div>
+          </div>
         </div>
 
         <div class="card reveal">
-          <h3>Bloc de compétences BTS SIO</h3>
+          <h3>Compétences professionnelles</h3>
 
           <ul class="check-list">
-            <li>Répondre aux incidents et aux demandes d’assistance</li>
-            <li>Développer la présence en ligne de l’organisation</li>
+            <li>Analyser un besoin et proposer une solution adaptée</li>
             <li>Travailler en mode projet</li>
-            <li>Mettre à disposition un service informatique</li>
+            <li>Développer et maintenir une application</li>
+            <li>Exploiter une base de données</li>
+            <li>Tester, corriger et documenter une solution</li>
             <li>Organiser son développement professionnel</li>
           </ul>
         </div>
@@ -247,8 +289,8 @@
       </div>
 
       <p class="section-help reveal">
-        Cette section regroupe les certifications obtenues pendant mon parcours.
-        Chaque certification est affichée avec un aperçu visuel et un lien de téléchargement vers le document officiel.
+        Cette section regroupe les certifications obtenues pendant ma formation.
+        Chaque carte contient un aperçu visuel et un lien vers le PDF officiel.
       </p>
 
       <div class="certif-grid">
@@ -261,7 +303,7 @@
 
           <p>
             Certification liée aux compétences numériques : environnement informatique,
-            communication, sécurité et traitement de l’information.
+            sécurité, communication et traitement de l’information.
           </p>
 
           <a href="assets/certifications/pix-1.pdf" download class="btn btn-small">
@@ -278,7 +320,7 @@
 
           <p>
             Deuxième attestation PIX permettant de compléter la preuve des compétences
-            numériques travaillées pendant la formation.
+            numériques travaillées pendant le parcours.
           </p>
 
           <a href="assets/certifications/pix-2.pdf" download class="btn btn-small">
@@ -294,7 +336,7 @@
           <h3>HackerRank SQL Basic</h3>
 
           <p>
-            Certification orientée SQL : requêtes, sélection de données, filtrage,
+            Certification orientée SQL : sélection de données, filtrage,
             jointures simples et manipulation de bases de données relationnelles.
           </p>
 
@@ -311,11 +353,28 @@
           <h3>PassTonHack</h3>
 
           <p>
-            Certification liée à la sensibilisation à la cybersécurité, aux bonnes pratiques
-            numériques et à la protection des systèmes d’information.
+            Certification liée à la sensibilisation à la cybersécurité,
+            aux bonnes pratiques numériques et à la protection des systèmes d’information.
           </p>
 
           <a href="assets/certifications/passtonhack.pdf" download class="btn btn-small">
+            Télécharger le PDF
+          </a>
+        </article>
+
+        <article class="certif-card reveal">
+          <div class="certif-preview">
+            <img src="assets/certifications/unity-junior.png" alt="Aperçu certification Unity Junior">
+          </div>
+
+          <h3>Unity Junior</h3>
+
+          <p>
+            Attestation liée à la découverte du développement avec Unity :
+            programmation C#, scènes, objets, interactions et logique de jeu.
+          </p>
+
+          <a href="assets/certifications/unity-junior.pdf" download class="btn btn-small">
             Télécharger le PDF
           </a>
         </article>
@@ -332,8 +391,15 @@
         <p>
           Email :
           <button id="copyEmail" data-email="prenom.nom@email.fr">
-            ludo-mastantuono@outlook.fr
+            prenom.nom@email.fr
           </button>
+        </p>
+
+        <p>
+          GitHub :
+          <a href="https://github.com/ludo-mastant/PCC" target="_blank" rel="noopener" class="text-link">
+            Voir mon portfolio sur GitHub
+          </a>
         </p>
 
         <p id="copyMessage" class="copy-message" aria-live="polite"></p>
@@ -341,7 +407,9 @@
     </section>
   </main>
 
-  <button class="back-to-top" id="backToTop">↑</button>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    ↑
+  </button>
 
   <footer class="footer">
     <p>Portfolio PCC - BTS SIO option SLAM - Ludo Mastantuono</p>

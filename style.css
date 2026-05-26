@@ -255,6 +255,10 @@ h3 {
   color: var(--muted);
 }
 
+.profile-card-wide {
+  max-width: 850px;
+}
+
 .filters {
   display: flex;
   gap: 10px;
@@ -278,10 +282,15 @@ h3 {
   border-color: var(--primary);
 }
 
-.project-grid,
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
 .certif-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 22px;
 }
 
@@ -401,6 +410,8 @@ h3 {
   background: transparent;
   font-weight: 800;
   cursor: pointer;
+  padding: 0;
+  font-size: inherit;
 }
 
 .copy-message {
